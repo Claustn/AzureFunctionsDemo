@@ -14,6 +14,8 @@ else
 {
     Write-Output "PScribo installed";
 }
+
+Get-Module -Listavailable | Out-String
 Write-output "$($env:MySecretUser)"
 Out-File -Encoding Ascii -FilePath $res -inputObject "Hello $name"
 
