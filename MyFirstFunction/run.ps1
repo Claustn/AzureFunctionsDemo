@@ -7,3 +7,4 @@ if ($req_query_MyName)
 }
 Write-output "$($env:MySecretUser)"
 Out-File -Encoding Ascii -FilePath $res -inputObject "Hello $name"
+#update
