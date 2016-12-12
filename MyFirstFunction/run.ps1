@@ -5,8 +5,15 @@ if ($req_query_MyName)
 {
     $name = "HTTP Req $req_query_MyName" 
 }
+
+if (-not (Get-Module -Name "PScribo"))
+{
+    Write-Output "PScribo not installed";
+}
+else
+{
+    Write-Output "PScribo installed";
+}
 Write-output "$($env:MySecretUser)"
 Out-File -Encoding Ascii -FilePath $res -inputObject "Hello $name"
 
-Install-module pscribo
-#update
