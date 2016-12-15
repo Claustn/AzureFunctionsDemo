@@ -1,6 +1,6 @@
 $requestBody = Get-Content $req -Raw | ConvertFrom-Json
 $name = "HTTPBody $($requestBody.MyName)"
-#Demo
+#Demo1234
 if ($req_query_MyName) 
 {
     $name = "HTTP Req $req_query_MyName" 
